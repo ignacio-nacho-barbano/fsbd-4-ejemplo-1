@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 84px;
+}
+
+main.light {
+  background-color: aquamarine;
+  color: blue;
+}
+
+main.dark {
+  background-color: rgb(2, 31, 21);
+  color: rgb(163, 163, 255);
+}
+
+main.colores-arcoiris {
+  background: linear-gradient(red, pink, blue, green, yellow);
+}
+
+.dark button {
+  background: black;
+  color: white;
+}
+
+.modal-overlay {
+  background: rgba(128, 128, 128, 0.5);
+  backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: solid black 2px;
+}
+
+button {
+  height: 52px;
+  border-radius: 8px;
+  border: solid blue 1px;
+  min-width: 52px;
+}
+button:hover {
+  background-color: aquamarine;
+}
+button:hover:active {
+  background-color: teal;
+}
